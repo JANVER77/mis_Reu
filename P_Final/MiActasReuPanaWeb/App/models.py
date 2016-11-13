@@ -191,6 +191,7 @@ class tareas(models.Model):
 		verbose_name = _('Tarea')
 		verbose_name_plural = _('7. Tareas')
 
+	#funcion que envia el valor del nombre de la tarea --> prueba github	
 	def __str__ (self): # __unicode__ on Python 2
 		#user = User.objects.get(id=2)
 		#b = User.objects.filter(id__contains=2)
@@ -198,3 +199,4 @@ class tareas(models.Model):
 		#a = request.user.get_full_name()
 		#return str(self.user.first_name+' '+user.last_name+' - '+user.email)
 		return str(self.nombretarea)
+
