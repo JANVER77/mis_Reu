@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+  <form action="{% url 'upersonas:padd' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Añadir persona" />
+</form>
+{% endblock %}
